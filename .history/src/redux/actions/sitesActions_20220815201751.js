@@ -25,4 +25,5 @@ export {
   setSites,
   selectedSite,
   removeSelectedSite,
+  fetchSites,
 }
