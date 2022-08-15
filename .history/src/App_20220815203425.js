@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SiteScreen from "./screens/SiteScreen/SiteScreen";
 import SiteDetailsScreen from './screens/SiteDetailsScreen/SiteDetailsScreen'
-import Header from "./components/Header/Header";
 import "./App.css";
 
 function App() {
