@@ -20,19 +20,19 @@
   overflow: hidden;
   margin-bottom: 5px;
 }
-.ui.cards > .card > .content > .list{
+.ui.cards > .card > .content > .description {
   height: 36px;
   margin-bottom: 0px;
   overflow: hidden;
 }
-.ui.cards > .card .meta.name{
+.ui.cards > .card .meta.price {
   margin-bottom: 5px;
   font-size: 18px;
   color: #333;
   font-weight: 600;
 }
 
-.ui.cards > .card .meta.name> a {
+.ui.cards > .card .meta.price > a {
   font-size: 1.3rem;
   color: #222;
 }

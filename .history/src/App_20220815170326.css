@@ -20,7 +20,7 @@
   overflow: hidden;
   margin-bottom: 5px;
 }
-.ui.cards > .card > .content > .list{
+.ui.cards > .card > .content > .description {
   height: 36px;
   margin-bottom: 0px;
   overflow: hidden;

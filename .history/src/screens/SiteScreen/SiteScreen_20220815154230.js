@@ -1,0 +1,32 @@
+import React, { useEffect, useCallback, useMemo } from "react";
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { setSites } from "../redux/actions/sitesActions";
+// import SiteComponent from "./SiteComponent";
+
+const SiteScreen = () => {
+  const sites = useSelector((state) => state.allsites.sites);
+  const dispatch = useDispatch();
+  const fetchsites = async () => {
+    const response = await axios
+      .get("https://interview.staging.atresplayer.com/sites")
+      .catch((err) => {
+        console.log("Err: ", err);
+      });
+    dispatch(setsites(response.data));
+  };
+
+  useEffect(() => {
+    fetchsites();
+  }, []);
+
+  console.log("sites :", sites);
+  return (
+    <div className="ui grid container">
+			<h1>sites</h1>
+      {/* <SiteComponent /> */}
+    </div>
+  );
+};
+
+export default SiteScreen;

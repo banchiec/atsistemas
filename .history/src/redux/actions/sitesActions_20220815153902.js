@@ -1,27 +1,21 @@
 import { ActionTypes } from "../constants/action-types"
 
-const setSites = (sites) => {
+export const setSites = (site) => {
   return {
     type: ActionTypes.SET_SITES,
-    payload: sites,
+    payload: products,
   }
 }
 
-const selectedSite = (site) => {
+export const selectedSite = (site) => {
   return {
     type: ActionTypes.SELECTED_SITE,
-    payload: site,
+    payload: product,
   }
 }
 
-const removeSelectedSite = () => {
+export const removeSelectedSite = () => {
   return {
     type: ActionTypes.REMOVE_SELECTED_SITE,
   }
-}
-
-export {
-  setSites,
-  selectedSite,
-  removeSelectedSite
 }
