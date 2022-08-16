@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <ContainerHeader>
       <div>
-        <Link to='/'>
+        <Link to='/site/register-site'>
           <h2>AtSistemas</h2>
         </Link>
       </div>
