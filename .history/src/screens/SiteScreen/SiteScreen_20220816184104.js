@@ -23,7 +23,6 @@ const SiteScreen = () => {
       .catch((err) => {
         console.log("Error api: ", err)
       })
-    fetchsites()
   }
 
   useEffect(() => {

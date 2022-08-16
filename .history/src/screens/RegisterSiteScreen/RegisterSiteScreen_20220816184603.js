@@ -74,7 +74,7 @@ const RegisterSiteScreen = () => {
         </FormControl>
         <FormControl>
           <Label htmlFor="label">Sitio</Label>
-          <Input id='site' value={site} onChange={(e) => setSite(e.target.value)} required />
+          <Input id='site' value={site} onChange={(e) => setSite(e.target.value)} />
           <Message>Introduce sitio</Message>
         </FormControl>
         <FormControl>

@@ -59,22 +59,22 @@ const RegisterSiteScreen = () => {
         </FormControl>
         <FormControl>
           <Label htmlFor="label">key</Label>
-          <Input id='key' value={key} onChange={(e) => setKey(e.target.value)} required />
+          <Input id='key' value={key} onChange={(e) => setKey(e.target.value)} />
           <Message>Introduce key</Message>
         </FormControl>
         <FormControl>
           <Label htmlFor="label">Path</Label>
-          <Input id='path' value={path} onChange={(e) => setPath(e.target.value)} required />
+          <Input id='path' value={path} onChange={(e) => setPath(e.target.value)} />
           <Message>Introduce Path</Message>
         </FormControl>
         <FormControl>
           <Label htmlFor="label">Public Path</Label>
-          <Input id='publicPath' value={publicPath} onChange={(e) => setPublicPath(e.target.value)} required />
+          <Input id='publicPath' value={publicPath} onChange={(e) => setPublicPath(e.target.value)} />
           <Message>Introduce PublicPath</Message>
         </FormControl>
         <FormControl>
           <Label htmlFor="label">Sitio</Label>
-          <Input id='site' value={site} onChange={(e) => setSite(e.target.value)} required />
+          <Input id='site' value={site} onChange={(e) => setSite(e.target.value)} />
           <Message>Introduce sitio</Message>
         </FormControl>
         <FormControl>

@@ -23,12 +23,13 @@ const SiteScreen = () => {
       .catch((err) => {
         console.log("Error api: ", err)
       })
-    fetchsites()
   }
 
   useEffect(() => {
-    fetchsites()
-  }, [])
+    if (!sites) {
+      fetchsites()
+    }
+  }, [sites])
 
   return (
     <div className="ui grid container">

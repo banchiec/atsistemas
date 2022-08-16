@@ -25,7 +25,7 @@ const SiteCard = ({ site, handleDeleteSite }) => {
             <div className="meta list">PublicPath: {publicPath}</div>
             <button onClick={() => handleDeleteSite(_id)}>Eliminar</button>
             <Link to='/site/update-site'>
-              <button>Actualizar</button>
+              <button >Actualizar</button>
             </Link>
           </div>
         </div>

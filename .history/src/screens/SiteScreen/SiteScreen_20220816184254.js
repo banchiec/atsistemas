@@ -20,10 +20,11 @@ const SiteScreen = () => {
   const handleDeleteSite = async (_id) => {
     const response = await axios
       .delete(`https://interview.staging.atresplayer.com/site/${_id}`)
+      .try(fetchsites())
       .catch((err) => {
         console.log("Error api: ", err)
       })
-    fetchsites()
+
   }
 
   useEffect(() => {

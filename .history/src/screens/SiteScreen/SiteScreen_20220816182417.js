@@ -16,14 +16,14 @@ const SiteScreen = () => {
       })
     dispatch(setSites(response.data))
   };
+  console.log(sites)
 
-  const handleDeleteSite = async (_id) => {
+  const handleDeleleSite = async (_id) => {
     const response = await axios
       .delete(`https://interview.staging.atresplayer.com/site/${_id}`)
       .catch((err) => {
         console.log("Error api: ", err)
       })
-    fetchsites()
   }
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const SiteScreen = () => {
     <div className="ui grid container">
       {sites?.map((site) => {
         return (
-          <SiteCard key={site._id} site={site} handleDeleteSite={handleDeleteSite} />
+          <SiteCard key={site._id} site={site} fetchsites={fetchsites} />
         )
       })
       }

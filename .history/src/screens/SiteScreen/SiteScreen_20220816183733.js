@@ -14,10 +14,10 @@ const SiteScreen = () => {
       .catch((err) => {
         console.log("Error api: ", err)
       })
-    dispatch(setSites(response.data))
   };
 
   const handleDeleteSite = async (_id) => {
+    console.log(_id)
     const response = await axios
       .delete(`https://interview.staging.atresplayer.com/site/${_id}`)
       .catch((err) => {

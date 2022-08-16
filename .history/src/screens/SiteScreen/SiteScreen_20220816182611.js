@@ -16,6 +16,7 @@ const SiteScreen = () => {
       })
     dispatch(setSites(response.data))
   };
+  console.log(sites)
 
   const handleDeleteSite = async (_id) => {
     const response = await axios
