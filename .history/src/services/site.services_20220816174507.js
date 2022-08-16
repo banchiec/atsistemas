@@ -9,4 +9,3 @@ class SiteService {
 		createSite = (site) => this.instance.post('/site', site)
 	}
 }
-export default SiteService
